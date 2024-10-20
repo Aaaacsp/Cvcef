@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .memory {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .memory img {
+            max-width: 100%;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comments form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Beautiful Memories</h1>
+    <p>Background music: First Love</p>
+</header>
+
+<div class="content">
+    <div class="memory">
+        <h2>Memory 1: Our First Date</h2>
+        <p>This was our first date at the beautiful park...</p>
+        <img src="photo1.jpg" alt="First Date Photo">
+    </div>
+
+    <div class="memory">
+        <h2>Memory 2: A Special Trip</h2>
+        <p>This trip meant the world to both of us...</p>
+        <img src="photo2.jpg" alt="Special Trip Photo">
+    </div>
+
+    <div class="comments">
+        <h3>Leave a Comment</h3>
+        <form action="/submit_comment" method="POST">
+            <textarea rows="5" placeholder="Your comment..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<audio controls autoplay loop>
+    <source src="first_love.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
